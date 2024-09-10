@@ -2115,7 +2115,7 @@ section.pull-up {
 
 .title-underline-red,
 .title-underline-thick-red {
-  border-color: #ef494d
+  border-color: #108346
 }
 
 .title-sideline-gray:before {
@@ -2179,7 +2179,7 @@ section.pull-up {
 }
 
 .title-sideline-red:before {
-  background-color: #ef494d
+  background-color: #108346
 }
 
 .title-strikethrough-black:before {
@@ -2247,7 +2247,7 @@ section.pull-up {
 }
 
 .title-strikethrough-red:before {
-  background-color: #ef494d
+  background-color: #108346
 }
 
 .text-black {
@@ -2315,7 +2315,7 @@ section.pull-up {
 }
 
 .text-red {
-  color: #ef494d!important
+  color: #108346!important
 }
 
 .text-hover-black:focus,
@@ -2400,7 +2400,7 @@ section.pull-up {
 
 .text-hover-red:focus,
 .text-hover-red:hover {
-  color: #ef494d!important
+  color: #108346!important
 }
 
 .bg-black {
@@ -2468,7 +2468,7 @@ section.pull-up {
 }
 
 .bg-red {
-  background-color: #ef494d!important
+  background-color: #108346!important
 }
 
 .bg-hover-black:hover {
@@ -2536,7 +2536,7 @@ section.pull-up {
 }
 
 .bg-hover-red:hover {
-  background-color: #ef494d!important
+  background-color: #108346!important
 }
 
 .border-black {
@@ -2604,7 +2604,7 @@ section.pull-up {
 }
 
 .border-red {
-  border-color: #ef494d!important
+  border-color: #108346!important
 }
 
 .btn.btn-base-color {
@@ -2860,7 +2860,7 @@ section.pull-up {
 }
 
 .btn.btn-color-red {
-  background-color: #ef494d;
+  background-color: #108346;
   color: #fff
 }
 
@@ -2869,8 +2869,8 @@ section.pull-up {
 }
 
 .btn.btn-color-red.btn-hover-transparent:hover {
-  border-color: #ef494d;
-  color: #ef494d;
+  border-color: #108346;
+  color: #108346;
   opacity: 1
 }
 
@@ -3167,20 +3167,20 @@ section.pull-up {
 }
 
 .btn.btn-outline-red {
-  border-color: #ef494d;
-  color: #ef494d
+  border-color: #108346;
+  color: #108346
 }
 
 .btn.btn-outline-red:focus,
 .btn.btn-outline-red:hover {
-  background-color: #ef494d;
+  background-color: #108346;
   color: #fff
 }
 
 .btn.btn-outline-red.btn-hover-transparent:focus,
 .btn.btn-outline-red.btn-hover-transparent:hover {
   background-color: transparent;
-  color: #ef494d
+  color: #108346
 }
 
 @media (max-width:1199px) {
