@@ -142,28 +142,9 @@ select::-ms-expand {
   margin-bottom: 0
 }
 
-form .error {
-  border-color: #c00!important
-}
-
-form label.error {
-  display: none!important
-}
-
 ::selection {
   background: #dfdfdf;
   color: #000
-}
-
-::-moz-selection {
-  background: #dfdfdf;
-  color: #000
-}
-
-::-webkit-input-placeholder {
-  color: #666!important;
-  font-size: 13px;
-  text-overflow: ellipsis
 }
 
 :-moz-placeholder {
@@ -2033,6 +2014,12 @@ section.pull-up {
   margin: 0 6px
 }
 
+.flex-row-reverse .speaker-info {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+
 .title-underline-black,
 .title-underline-thick-black {
   border-color: #000
@@ -2093,26 +2080,6 @@ section.pull-up {
   border-color: #66b772
 }
 
-.title-underline-orange,
-.title-underline-thick-orange {
-  border-color: #ff7e5b
-}
-
-.title-underline-orange-2,
-.title-underline-thick-orange-2 {
-  border-color: #ffa84c
-}
-
-.title-underline-pink,
-.title-underline-thick-pink {
-  border-color: #ff4081
-}
-
-.title-underline-purple,
-.title-underline-thick-purple {
-  border-color: #aa2e85
-}
-
 .title-underline-red,
 .title-underline-thick-red {
   border-color: #108346
@@ -2160,22 +2127,6 @@ section.pull-up {
 
 .title-sideline-green-2:before {
   background-color: #66b772
-}
-
-.title-sideline-orange:before {
-  background-color: #ff7e5b
-}
-
-.title-sideline-orange-2:before {
-  background-color: #ffa84c
-}
-
-.title-sideline-pink:before {
-  background-color: #ff4081
-}
-
-.title-sideline-purple:before {
-  background-color: #aa2e85
 }
 
 .title-sideline-red:before {
@@ -2230,22 +2181,6 @@ section.pull-up {
   background-color: #66b772
 }
 
-.title-strikethrough-orange:before {
-  background-color: #ff7e5b
-}
-
-.title-strikethrough-orange-2:before {
-  background-color: #ffa84c
-}
-
-.title-strikethrough-pink:before {
-  background-color: #ff4081
-}
-
-.title-strikethrough-purple:before {
-  background-color: #aa2e85
-}
-
 .title-strikethrough-red:before {
   background-color: #108346
 }
@@ -2296,22 +2231,6 @@ section.pull-up {
 
 .text-green-2 {
   color: #66b772!important
-}
-
-.text-orange {
-  color: #ff7e5b!important
-}
-
-.text-orange-2 {
-  color: #ffa84c!important
-}
-
-.text-pink {
-  color: #ff4081!important
-}
-
-.text-purple {
-  color: #aa2e85!important
 }
 
 .text-red {
@@ -2378,26 +2297,6 @@ section.pull-up {
   color: #66b772!important
 }
 
-.text-hover-orange:focus,
-.text-hover-orange:hover {
-  color: #ff7e5b!important
-}
-
-.text-hover-orange-2:focus,
-.text-hover-orange-2:hover {
-  color: #ffa84c!important
-}
-
-.text-hover-pink:focus,
-.text-hover-pink:hover {
-  color: #ff4081!important
-}
-
-.text-hover-purple:focus,
-.text-hover-purple:hover {
-  color: #aa2e85!important
-}
-
 .text-hover-red:focus,
 .text-hover-red:hover {
   color: #108346!important
@@ -2449,22 +2348,6 @@ section.pull-up {
 
 .bg-green-2 {
   background-color: #66b772!important
-}
-
-.bg-orange {
-  background-color: #ff7e5b!important
-}
-
-.bg-orange-2 {
-  background-color: #ffa84c!important
-}
-
-.bg-pink {
-  background-color: #ff4081!important
-}
-
-.bg-purple {
-  background-color: #aa2e85!important
 }
 
 .bg-red {
@@ -2519,22 +2402,6 @@ section.pull-up {
   background-color: #66b772!important
 }
 
-.bg-hover-orange:hover {
-  background-color: #ff7e5b!important
-}
-
-.bg-hover-orange-2:hover {
-  background-color: #ffa84c!important
-}
-
-.bg-hover-pink:hover {
-  background-color: #ff4081!important
-}
-
-.bg-hover-purple:hover {
-  background-color: #aa2e85!important
-}
-
 .bg-hover-red:hover {
   background-color: #108346!important
 }
@@ -2585,22 +2452,6 @@ section.pull-up {
 
 .border-green-2 {
   border-color: #66b772!important
-}
-
-.border-orange {
-  border-color: #ff7e5b!important
-}
-
-.border-orange-2 {
-  border-color: #ffa84c!important
-}
-
-.border-pink {
-  border-color: #ff4081!important
-}
-
-.border-purple {
-  border-color: #aa2e85!important
 }
 
 .border-red {
@@ -2799,65 +2650,10 @@ section.pull-up {
   opacity: 1
 }
 
-.btn.btn-color-orange {
-  background-color: #ff7e5b;
-  color: #fff
-}
-
 .btn.btn-color-orange:hover {
   opacity: .9
 }
 
-.btn.btn-color-orange.btn-hover-transparent:hover {
-  border-color: #ff7e5b;
-  color: #ff7e5b;
-  opacity: 1
-}
-
-.btn.btn-color-orange-2 {
-  background-color: #ffa84c;
-  color: #fff
-}
-
-.btn.btn-color-orange-2:hover {
-  opacity: .9
-}
-
-.btn.btn-color-orange-2.btn-hover-transparent:hover {
-  border-color: #ffa84c;
-  color: #ffa84c;
-  opacity: 1
-}
-
-.btn.btn-color-pink {
-  background-color: #ff4081;
-  color: #fff
-}
-
-.btn.btn-color-pink:hover {
-  opacity: .9
-}
-
-.btn.btn-color-pink.btn-hover-transparent:hover {
-  border-color: #ff4081;
-  color: #ff4081;
-  opacity: 1
-}
-
-.btn.btn-color-purple {
-  background-color: #aa2e85;
-  color: #fff
-}
-
-.btn.btn-color-purple:hover {
-  opacity: .9
-}
-
-.btn.btn-color-purple.btn-hover-transparent:hover {
-  border-color: #aa2e85;
-  color: #aa2e85;
-  opacity: 1
-}
 
 .btn.btn-color-red {
   background-color: #108346;
@@ -3098,73 +2894,12 @@ section.pull-up {
   color: #66b772
 }
 
-.btn.btn-outline-orange {
-  border-color: #ff7e5b;
-  color: #ff7e5b
-}
-
-.btn.btn-outline-orange:focus,
-.btn.btn-outline-orange:hover {
-  background-color: #ff7e5b;
-  color: #fff
-}
-
-.btn.btn-outline-orange.btn-hover-transparent:focus,
-.btn.btn-outline-orange.btn-hover-transparent:hover {
-  background-color: transparent;
-  color: #ff7e5b
-}
-
-.btn.btn-outline-orange-2 {
-  border-color: #ffa84c;
-  color: #ffa84c
-}
-
-.btn.btn-outline-orange-2:focus,
-.btn.btn-outline-orange-2:hover {
-  background-color: #ffa84c;
-  color: #fff
-}
-
 .btn.btn-outline-orange-2.btn-hover-transparent:focus,
 .btn.btn-outline-orange-2.btn-hover-transparent:hover {
   background-color: transparent;
   color: #ffa84c
 }
 
-.btn.btn-outline-pink {
-  border-color: #ff4081;
-  color: #ff4081
-}
-
-.btn.btn-outline-pink:focus,
-.btn.btn-outline-pink:hover {
-  background-color: #ff4081;
-  color: #fff
-}
-
-.btn.btn-outline-pink.btn-hover-transparent:focus,
-.btn.btn-outline-pink.btn-hover-transparent:hover {
-  background-color: transparent;
-  color: #ff4081
-}
-
-.btn.btn-outline-purple {
-  border-color: #aa2e85;
-  color: #aa2e85
-}
-
-.btn.btn-outline-purple:focus,
-.btn.btn-outline-purple:hover {
-  background-color: #aa2e85;
-  color: #fff
-}
-
-.btn.btn-outline-purple.btn-hover-transparent:focus,
-.btn.btn-outline-purple.btn-hover-transparent:hover {
-  background-color: transparent;
-  color: #aa2e85
-}
 
 .btn.btn-outline-red {
   border-color: #108346;

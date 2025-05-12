@@ -1,41 +1,4 @@
 /*
-  Table of contents
-  -----------------
-  01. Navbar
-  02. Section - Home
-    - Home BG Static (default)
-    - Home BG Parallax
-    - Home BG Slideshow
-    - Home BG Slider
-  03. Countdown
-  04. Intro
-  05. Section - Team
-  06. Section - Speakers
-  07. Section - Venue
-  08. Section - Schedule
-    - Carousel Schedule
-    - Timeline
-  09. Milestones
-  10. Section - FAQ
-    - Accordions
-    - Nav Stacked
-  11. Section - Ticket
-    - Testimonial
-    - Pricing
-  12. Section - Register
-  13. Section - Contact
-    - Google map
-    - Forms
-  14. Event bottom banner
-  15. Countdown timer
-  16. Footer
-  17. Responsive images
-  18. Features box
-*/
-
-
-
-/*
   Navbar
   ------
 */
@@ -187,9 +150,92 @@
   Section - Speakers
   ------------------
 */
+#Speaker {
+  background-color: #f5f7fa;
+  padding: 60px 0;
+}
 
-.speaker-box {
-  margin-bottom: 24px;
+#Speaker h2 {
+  font-size: 36px;
+  color: #303f9f;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#Speaker .separator-line-extra-thick-long {
+  height: 4px;
+  background-color: #303f9f;
+  width: 50px;
+  display: block;
+}
+
+/* Card Styles */
+.speakers-card {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speakers-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.speakers-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.speakers-content {
+  padding-left: 20px;
+}
+
+.speakers-title {
+  font-size: 24px;
+  color: #303f9f;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.speakers-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.speakers-date .date {
+  background-color: #1e88e5;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.speakers-category {
+  font-size: 14px;
+  color: #757575;
+}
+
+/* Button Styles */
+.content .post-list .post-item .buttons button {
+  padding: 10px 30px;
+  background: #303f9f;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.content .post-list .post-item .buttons button:hover {
+  background: #1a237e;
 }
 
 
@@ -204,37 +250,6 @@
   background-position: center bottom !important;
 }
 
-
-
-/*
-  Section - Schedule
-  ------------------
-*/
-
-#schedule .nav-tabs > li.active > a,
-#schedule .nav-tabs > li.active > a:hover,
-#schedule .nav-tabs > li.active > a:focus {
-  background-color: #626262;
-  color: #ffffff;
-}
-#schedule .nav-tabs > li > a {
-  color: #272727;
-}
-#schedule .td-session-number {
-  width: 110px;
-}
-
-
-/* Carousel Schedule */
-
-.carousel-schedule .carousel-cell {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .carousel-schedule .carousel-cell {
-    width: 50%;
-  }
-}
 
 
 /* Timeline */
@@ -289,23 +304,6 @@
   padding: 16px;
 }
 
-
-
-/*
-  Milestones
-  ----------
-*/
-
-#milestones {
-  background-image: url("../images/bg-milestones.jpg");
-}
-
-
-
-/*
-  Section - FAQ
-  -------------
-*/
 
 /* Accordions */
 
@@ -384,12 +382,6 @@
   padding: 14px 18px;
 }
 
-
-
-/*
-  Section - Ticket
-*/
-
 /* Testimonial */
 
 .testimonial {
@@ -408,231 +400,6 @@
   height: 75px;
   padding-left: 95px;
 }
-
-
-/* Pricing */
-
-.pricing.box-shadow-yes {
-  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.05);
-}
-.pricing.box-shadow-yes:hover {
-  -webkit-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.1);
-}
-.pricing-dollar {
-  bottom: 28px;
-}
-.pricing ul > li {
-  position: relative;
-  margin-top: 10px;
-}
-.pricing ul > li.check-mark {
-  padding-left: 32px;
-}
-.pricing ul > li.check-mark:before {
-  background-color: #989898;
-  border-radius: 50%;
-  color: #ffffff;
-  content: '\2713';
-  display: block;
-  font-size: 11px;
-  left: 0;
-  line-height: 20px;
-  height: 18px;
-  position: absolute;
-  text-align: center;
-  top: 1px;
-  width: 18px;
-}
-.pricing ul > li:first-child {
-  margin-top: 0;
-}
-
-
-
-/*
-  Section - Register
-  ------------------
-*/
-
-#register {
-  background-image: url("../images/bg-register.jpg");
-}
-#register .form-wrapper {
-  background: rgba(0, 0, 0, 0.8);
-}
-#register textarea {
-  height: 120px;
-}
-
-
-
-/*
-  Section - Contact
-  -----------------
-*/
-
-#form-contact textarea {
-  height: 120px;
-  margin-bottom: 0;
-}
-@media (max-width: 991px) {
-  #form-contact button {
-    margin-top: 20px;
-  }
-}
-
-
-@media (max-width: 991px) {
-  .contact-address {
-    margin-top: 48px;
-    padding-top: 32px;
-    border-top: 1px solid #dfdfdf;
-  }
-}
-
-
-/* Google map */
-
-.map {
-  position: relative;
-  padding-bottom: 100%;    /* aspect ratio 1:1 */
-  height: 0;
-  overflow: hidden;
-}
-@media (min-width:420px) {
-  .map {
-    padding-bottom: 75%;    /* aspect ratio 3:4 */
-  }
-}
-@media (min-width:540px) {
-  .map {
-    padding-bottom: 60%;    /* aspect ratio 3:5 */
-  }
-}
-@media (min-width:800px) {
-  .map {
-    padding-bottom: 75%;    /* aspect ratio 3:4 */
-  }
-}
-.map iframe {
-  position: absolute;
-  border: 0;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-
-/* Forms */
-
-.form {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  border: 0;
-}
-.form iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-#volunteer-form {
-  padding-bottom: 3000px;    /* height */
-}
-#nominate-speaker-form {
-  padding-bottom: 1950px;    /* height */
-}
-
-
-
-/*
-  Event bottom banner
-  -------------------
-*/
-#event-banner {
-  background-image: url("https://toptal.com/designers/subtlepatterns/patterns/whitediamond.png");
-}
-#event-banner .row {
-  display: flex;
-  flex-direction: column;
-}
-#event-banner .row #banner-registration {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width: 768px) {
-  #event-banner .row {
-    flex-direction: row;
-  }
-  #event-banner .row #banner-registration {
-    margin: auto;
-  }
-}
-
-
-
-/*
-  Countdown timer
-  ---------------
-*/
-
-.countdown-timer {
-  display: flex;
-  justify-content: center;
-}
-.countdown-timer div {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.countdown-timer .value {
-  font-family: Roboto, sans-serif;
-  font-size: 36px;
-  font-weight: 800;
-  color: white;
-  align-self: center;
-}
-.countdown-timer .label {
-  font-family: Catamaran, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  padding-top: 8px;
-  align-self: center;
-}
-@media (min-width:420px) {
-  .countdown-timer .value {
-    font-size: 48px;
-  }
-  .countdown-timer .label {
-    padding-top: 16px;
-  }
-}
-@media (min-width:600px) {
-  .countdown-timer .value {
-    font-size: 56px;
-  }
-  .countdown-timer .label {
-    font-size: 18px;
-  }
-}
-@media (min-width:900px) {
-  .countdown-timer .value {
-    font-size: 64px;
-  }
-  .countdown-timer .label {
-    padding-top: 24px;
-  }
-}
-
 
 
 /*
